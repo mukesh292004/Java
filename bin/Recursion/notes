@@ -1,0 +1,22 @@
+the function call is stored in the stack
+        first is main is called in stack
+        then the function is called in the stack
+        then the function is called again in the stack
+        once the current function is done, it is removed from the stack
+        then the previous function is called
+        then the main function is called
+        then the program ends
+        recursion needs a base case to stop the recursion
+        if there is no base case, the program will run forever
+       it may cause stack overflow error memory
+
+why recursion 
+  solving complex problem into simple
+  itreate through functions
+   in recursion  space complexity the space complexity is not constant
+   recursive tree
+recurance relation 
+     forming formula using recursion
+     2 types 
+     divide and conqure  ex fibo
+     linere recurance    ex  binarysearch
