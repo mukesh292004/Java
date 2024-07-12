@@ -74,4 +74,42 @@ public class BinarySearchTree {
         }
         return isBalanced(node.left) && isBalanced(node.right);
     }
+    public void inorder() {
+        inorder(root);
+        System.out.println();
+    }
+    private void inorder(Node node){
+        if(node ==null){
+            return;
+        }
+        inorder(node.left);
+        System.out.print(node.getData()+" ");
+        inorder(node.right);
+    }
+    public void preorder() {
+        preorder(root);
+        System.out.println();
+    }
+    private void preorder(Node node){
+        if(node ==null){
+            return;
+        }
+        System.out.print(node.getData()+" ");
+        preorder(node.left);
+        preorder(node.right);
+    }
+    public void postorder() {
+        postorder(root);
+        System.out.println();
+
+    }
+    private void postorder(Node node){
+        if(node ==null){
+            return;
+        }
+        postorder(node.left);
+        postorder(node.right);
+        System.out.print(node.getData()+" ");
+    }
+
 }
