@@ -16,8 +16,8 @@ public class BTree {
 
     private Node root;
 
-    public BTree() {
-    }
+    // public BTree() {
+    // }
 
     public void populate(Scanner in) {
         System.out.println("Enter the root node:");
