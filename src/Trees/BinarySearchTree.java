@@ -1,5 +1,7 @@
 package Trees;
 
+import java.util.Arrays;
+
 public class BinarySearchTree {
     public class Node {
         private int data;
@@ -80,9 +82,20 @@ public class BinarySearchTree {
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
         int[] a = {10, 20, 30, 40, 50, 25, 35, 9, 8, 7, 8, 5, 4, 3, 2, 1};
-        for (int i : a) {
-            tree.insert(i);
-        }
+        Arrays.sort(a);
+        // for (int i : a) {
+        //     tree.insert(i);
+        // }
+          forsrotedarray(a, 0, a.length - 1, tree);
         tree.display();
+    }
+    public static void forsrotedarray(int[] a, int start, int end, BinarySearchTree tree) {
+        if (start > end) {
+            return;
+        }
+        int mid = (start + end) / 2;
+        tree.insert(a[mid]);
+        forsrotedarray(a, start, mid - 1, tree);
+        forsrotedarray(a, mid + 1, end, tree);
     }
 }
