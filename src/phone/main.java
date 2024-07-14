@@ -2,8 +2,8 @@ package phone;
 
 public class main {
     public static void main(String[] args) {
-        // phone("","123 ");
-        dice("",4);
+        phone("","123 ");
+        // dice("",4);
     }
     static void phone(String a,String b){
         if(b.isEmpty()){

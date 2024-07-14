@@ -10,7 +10,7 @@ public class longestConsecutive {
         // some consecutive  for 102 is 102only
         // for 4=4,100,101,102is the sequence
         // no repeatation 
-		int arr[] = {102,4,100,1,101,3,1,2,1,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119};
+		int arr[] = {100,4,200,1,3,2};
 		int N = arr.length;
 		System.out.println(findLongestConseqSubseq(arr, N));
 
@@ -22,6 +22,7 @@ public class longestConsecutive {
     	static int findLongestConseqSubseq(int arr[], int N)
 	{
 	  Arrays.sort(arr);  //n long n
+	  1 2 3 4 100 200
 	  int min=arr[0];
 	  int count =1;
 	  int max=1;
