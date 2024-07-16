@@ -7,6 +7,7 @@ public class claimbstrsirs {
     public static void main(String[] args) {
         HashMap<Integer,Integer> map = new HashMap<>();
         System.out.println(recursion(10,map));
+        // climb stairs
     }
 
       
